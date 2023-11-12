@@ -15,9 +15,17 @@
     --yellow: #c6931b;
     --yellowdark: #cd981e98;
     --yellowdarker: #9d751664;
+    --yellowshadow: 0px 0px 200px rgba(255, 255, 0, 0.600);
+    --greenshadow: 0px 0px 200px rgba(0, 128, 0, 0.600);
 }
 
 body{
     position: relative;
+}
+
+.btn, .portfolio-name h1, .header-container nav ul li{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
