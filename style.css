@@ -1,0 +1,109 @@
+/* Color Theme Swatches in Hex */
+ .feeling-blue-1-hex { color: #3D5A73; }
+.feeling-blue-2-hex { color: #2F3D40; }
+.feeling-blue-3-hex { color: #455559; }
+.feeling-blue-4-hex { color: #28403D; }
+.feeling-blue-5-hex { color: #182625; }
+
+main{
+    margin-top: 80px;
+    position: relative;
+}
+
+.presentation-container{
+    width: 100%;
+    height: calc(100vh - 80px) ;
+    background: var(--dark);
+}
+
+.presentation-container > div{
+    width: 100%;
+    height: 100%;
+    max-width: 1366px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+}
+
+.presentation-container .presentation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentation-container .name{
+    color: white;
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 0.85;
+    margin: 0 0 20px 0;
+}
+
+.presentation-container .profession-name{
+    color: var(--green);
+    font-size: 1.9em;
+    font-weight: 600;
+    text-align: justify;
+    text-shadow: 1px 1px 4px var(--darkergreen);
+}
+
+.presentation p{
+    color: var(--lightgrey);
+    margin-top: 0.7em;
+    line-height: 1.8em;
+}
+
+.social-btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: rgb(222, 222, 222);
+    border: 2px solid var(--lightdark);
+    width: 10em;
+    height: 2.5em;
+    border-radius: 40px;
+    font-weight: 700;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    transition: all 0.4s ease;
+}
+
+.btn-gitHub:hover, .btn-linkedin:hover{
+    background: #383838;
+    color: var(--darkgreen);
+}
+
+.logos-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.css{
+    margin-left: -40px;
+    font-size: 20em;
+    color: var(--darkgreen);
+    text-shadow: 0px 0px 200px rgb(71, 158, 97, 0.651);
+}
+
+.html{
+    margin-left: -0.2em;
+    font-size: 13em;
+    color: var(--yellow);
+    text-shadow: 0px 0px 200px hsla(61, 38%, 45%, 0.651);
+}
