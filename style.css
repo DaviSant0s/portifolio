@@ -1,5 +1,5 @@
 /* Color Theme Swatches in Hex */
- .feeling-blue-1-hex { color: #3D5A73; }
+.feeling-blue-1-hex { color: #3D5A73; }
 .feeling-blue-2-hex { color: #2F3D40; }
 .feeling-blue-3-hex { color: #455559; }
 .feeling-blue-4-hex { color: #28403D; }
@@ -7,33 +7,31 @@
 
 main{
     margin-top: 80px;
-    position: relative;
 }
 
 .presentation-container{
     width: 100%;
-    height: calc(100vh - 80px) ;
-    background: #0f0f0f;
-}
+    height: calc(100vh - 80px);
+    background: #f3f3f3;
+    /* background: #f8f8f8; */
 
-.presentation-container > div{
-    width: 100%;
-    height: 100%;
-    max-width: 1366px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 40% 40%;
-    justify-content: center;
-}
 
-.presentation-container .presentation{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.presentation-content{
+    position: relative;
+    width: 64em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
 .presentation-container .name{
-    color: white;
+    color: #1E293B;
     font-size: 5em;
     font-weight: 800;
     line-height: 0.85;
@@ -45,62 +43,50 @@ main{
     font-size: 1.9em;
     font-weight: 600;
     text-align: justify;
-    text-shadow: 1px 1px 4px var(--darkergreen);
 }
 
-.presentation p{
-    color: var(--lightgrey);
+.presentation-content p{
+    color: #7F7F87;
     margin-top: 0.7em;
-    line-height: 1.8em;
 }
 
 .social-btn-container{
+    height: 4em;
+    width: 19.5em;
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    gap: 1em;
     margin-top: 1em;
 }
 
-.btn{
+.button-content{
+    height: 100%;
+    width: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: transparent;
-    color: rgb(222, 222, 222);
-    border: 2px solid var(--lightdark);
-    width: 10em;
-    height: 2.5em;
+    justify-content: start;
+}
+
+.btn{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background: #f0f0f0;
+    color: var(--lightdark);
+    border: 1px solid #c6c6c6;
+    width: 144px;
+    height: 41.6px;
+    font-size: 15px;
     border-radius: 40px;
     font-weight: 700;
     cursor: pointer;
-    transition: all 0.4s ease;
+    transition: all 0.4s ease
 }
 
 .btn-gitHub:hover, .btn-linkedin:hover{
-    background: #383838;
+    background: #F9FAFB;
     color: var(--darkgreen);
 }
 
-.logos-container{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-}
-
-.css{
-    margin-left: -40px;
-    font-size: 20em;
-    color: var(--darkgreen);
-    text-shadow: var(--greenshadow);
-}
-
-.html{
-    margin-left: -0.2em;
-    font-size: 13em;
-    color: var(--yellowdark);
-    text-shadow: var(--yellowshadow);
-}

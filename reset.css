@@ -13,14 +13,11 @@
     --lightdark: #383838;
     --lightgrey: #dfd9d9;
     --yellow: #c6931b;
-    --yellowdark: #cd981e98;
+    --yellowdark: #cd981ed7;
+    /* --yellowdark: #cd981e98; */
     --yellowdarker: #9d751664;
     --yellowshadow: 0px 0px 200px rgba(255, 255, 0, 0.600);
     --greenshadow: 0px 0px 200px rgba(0, 128, 0, 0.600);
-}
-
-body{
-    position: relative;
 }
 
 .btn, .portfolio-name h1, .header-container nav ul li{
